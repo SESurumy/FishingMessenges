@@ -77,9 +77,8 @@ from sklearn.model_selection import train_test_split
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.70, random_state=42)
 
-"""Обучение алгоритмом машинного обучения 'Дерево решений'"""
+"""Обучение алгоритмом машинного обучения 'Логистическая регрессия'"""
 from sklearn.linear_model import LogisticRegression
-
 
 lr_clf = LogisticRegression()
 lr_clf.fit(X_train, y_train)
@@ -91,3 +90,4 @@ from sklearn.metrics import classification_report, confusion_matrix, accuracy_sc
 print(confusion_matrix(y_test,y_pred))
 print(classification_report(y_test,y_pred))
 print(accuracy_score(y_test,y_pred))
+
